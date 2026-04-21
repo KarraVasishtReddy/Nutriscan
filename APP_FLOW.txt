@@ -1,0 +1,342 @@
+NUTRISCAN APP FLOW DIAGRAM
+===========================
+
+
+┌─────────────────────────────────────────────────────────┐
+│                      NutriScan App                      │
+│        Food Intelligence & Wellness Companion           │
+└─────────────────────────────────────────────────────────┘
+
+
+MAIN NAVIGATION
+===============
+
+                    ┌──────────────────────────────┐
+                    │   Tab Navigation Bar         │
+                    ├──────────────────────────────┤
+                    │ Dashboard | Scan | Suggest   │
+                    │ Journal   | (4 screens)      │
+                    └──────────────────────────────┘
+                              │
+            ┌───────┬─────────┼─────────┬────────┐
+            │       │         │         │        │
+            ▼       ▼         ▼         ▼        ▼
+        Home    Scan Food Recommend  Journal
+
+
+SCREEN 1: DASHBOARD (Home Screen)
+=================================
+
+┌─────────────────────────────────────────┐
+│            📊 DASHBOARD                  │
+├─────────────────────────────────────────┤
+│                                         │
+│  ┌─────────────┬─────────────┐         │
+│  │   Today's   │   Meals     │         │
+│  │  Calories   │  Logged     │         │
+│  │    1200     │     3       │         │
+│  └─────────────┴─────────────┘         │
+│                                         │
+│  ┌─────────────┬─────────────┐         │
+│  │  Junk       │ Antioxidant │         │
+│  │  Score      │ Score       │         │
+│  │   35/100    │   78/100    │         │
+│  └─────────────┴─────────────┘         │
+│                                         │
+│  ┌─────────────────────────────┐       │
+│  │  Health Rating: EXCELLENT   │       │
+│  │         [circle icon]       │       │
+│  │  "Keep eating green foods"  │       │
+│  └─────────────────────────────┘       │
+│                                         │
+│  ┌─────────────────────────────┐       │
+│  │  Fiber: ████████░░░  15g/25g │      │
+│  └─────────────────────────────┘       │
+│                                         │
+│  ┌─────────────────────────────┐       │
+│  │  TODAY'S MEALS              │       │
+│  │  8:00 AM  Oatmeal with...   │       │
+│  │           280 cal, 85 antox  │      │
+│  │                             │       │
+│  │  11:30 AM Apple             │       │
+│  │           95 cal, 75 antox   │      │
+│  └─────────────────────────────┘       │
+│                                         │
+└─────────────────────────────────────────┘
+
+
+SCREEN 2: SCAN FOOD
+==================
+
+┌─────────────────────────────────────────┐
+│       📷 WHAT DID YOU EAT?               │
+├─────────────────────────────────────────┤
+│                                         │
+│  ┌──────┬──────┐  ┌──────┬──────┐     │
+│  │Apple │ Carb │  │ Grape│ Beet │     │
+│  │95cal │ 80cal│  │ 67ca │ 43ca │     │
+│  │Healthy│Healthy│ Heathy Healthy      │
+│  └──────┴──────┘  └──────┴──────┘     │
+│                                         │
+│  ┌──────┬──────┐  ┌──────┬──────┐     │
+│  │Spinach│Brocc│  │ Soda │French│     │
+│  │45cal │34cal│  │140cal│320ca │     │
+│  │Healthy│Healthy│High  High           │
+│  └──────┴──────┘  └──────┴──────┘     │
+│                                         │
+│  ┌──────┬──────┐  ┌──────┬──────┐     │
+│  │Chicken│Dark  │  │ Salmon│ Yog │     │
+│  │185cal │155ca │  │206cal│100ca│     │
+│  │Healthy│Healthy│ Healthy Healthy    │
+│  └──────┴──────┘  └──────┴──────┘     │
+│                                         │
+│  [Click any food to add to meals]       │
+│                                         │
+│  Alert Zone (if triggered):             │
+│  ⚠️  "Soda has high junk score!"       │
+│                                         │
+└─────────────────────────────────────────┘
+
+
+SCREEN 3: RECOMMENDATIONS
+========================
+
+┌─────────────────────────────────────────┐
+│     💡 PERSONALIZED SUGGESTIONS          │
+├─────────────────────────────────────────┤
+│                                         │
+│  Based on your eating patterns:        │
+│                                         │
+│  ┌─────────────────────────────┐       │
+│  │ 🫐 Boost Antioxidants       │       │
+│  │ Your score is low. Add      │       │
+│  │ berries, greens, or dark    │       │
+│  │ chocolate to your meals.    │       │
+│  └─────────────────────────────┘       │
+│                                         │
+│  ┌─────────────────────────────┐       │
+│  │ 🚫 Reduce Junk Intake       │       │
+│  │ We detected high-junk foods │       │
+│  │ Try swapping fried for      │       │
+│  │ grilled options.            │       │
+│  └─────────────────────────────┘       │
+│                                         │
+│  ┌─────────────────────────────┐       │
+│  │ 🥦 Increase Fiber           │       │
+│  │ You're below daily target.  │       │
+│  │ Add more vegetables and     │       │
+│  │ whole grains.               │       │
+│  └─────────────────────────────┘       │
+│                                         │
+│  ┌─────────────────────────────┐       │
+│  │ 🥗 Make a Green Salad       │       │
+│  │ Spinach + blueberries +     │       │
+│  │ dark chocolate = 92 antox!  │       │
+│  └─────────────────────────────┘       │
+│                                         │
+└─────────────────────────────────────────┘
+
+
+SCREEN 4: FOOD JOURNAL
+====================
+
+┌─────────────────────────────────────────┐
+│        📋 FOOD JOURNAL                   │
+├─────────────────────────────────────────┤
+│                                         │
+│  Daily Summary:                         │
+│  ┌─────────────┬────────────┐          │
+│  │ Calories    │ Fiber      │          │
+│  │ 1200        │ 12.5g      │          │
+│  └─────────────┴────────────┘          │
+│  ┌─────────────────────────────┐       │
+│  │ Avg Antioxidants: 75        │       │
+│  └─────────────────────────────┘       │
+│                                         │
+│  ─────────────────────────────────     │
+│                                         │
+│  8:00 AM                                │
+│  Oatmeal with berries                   │
+│  280cal • Antioxidants: 85              │
+│                                         │
+│  ─────────────────────────────────     │
+│                                         │
+│  11:30 AM                               │
+│  Apple                                  │
+│  95cal • Antioxidants: 75               │
+│                                         │
+│  ─────────────────────────────────     │
+│                                         │
+│  2:15 PM                                │
+│  Spinach salad                          │
+│  45cal • Antioxidants: 92               │
+│                                         │
+│  ─────────────────────────────────     │
+│                                         │
+│  [Clear all meals]                      │
+│                                         │
+└─────────────────────────────────────────┘
+
+
+DATA FLOW DIAGRAM
+================
+
+              ┌──────────────────────────┐
+              │   User Actions           │
+              │  - Click food            │
+              │  - Switch tabs           │
+              │  - Clear meals           │
+              └────────┬─────────────────┘
+                       │
+                       ▼
+              ┌──────────────────────────┐
+              │   Event Handlers         │
+              │  - handleAddFood()       │
+              │  - setScreen()           │
+              │  - handleClearMeals()    │
+              └────────┬─────────────────┘
+                       │
+                       ▼
+              ┌──────────────────────────┐
+              │   State Updates          │
+              │  - meals[]               │
+              │  - screen                │
+              │  - alerts[]              │
+              └────────┬─────────────────┘
+                       │
+                       ▼
+              ┌──────────────────────────┐
+              │   Calculations           │
+              │  - totalCalories         │
+              │  - avgAntioxidants       │
+              │  - healthStatus          │
+              │  - totalFiber            │
+              └────────┬─────────────────┘
+                       │
+                       ▼
+              ┌──────────────────────────┐
+              │   Render Screen          │
+              │  - Dashboard             │
+              │  - Scanner               │
+              │  - Recommendations       │
+              │  - Journal               │
+              └──────────────────────────┘
+
+
+MEAL OBJECT STRUCTURE
+====================
+
+{
+  name: "Apple",              // Food name
+  calories: 95,               // 0-500
+  antioxidants: 75,           // 0-100 score
+  junk: 2,                    // 0-100 score (higher=worse)
+  fiber: 4.4,                 // grams
+  time: "8:00 AM"             // When added
+}
+
+
+SCORING SYSTEM
+==============
+
+ANTIOXIDANTS (0-100, higher is better)
+  0-30    ❌ Low
+  30-50   ⚠️  Fair
+  50-70   ✓ Good
+  70+     ✅ Excellent
+
+JUNK (0-100, lower is better)
+  0-20    ✅ Healthy
+  20-60   ⚠️  Ok
+  60+     ❌ High junk
+
+HEALTH STATUS
+  0-30    ❌ Needs improvement
+  30-50   ⚠️  Fair
+  50-70   ✓ Good
+  70+     ✅ Excellent
+
+
+KEY FEATURES
+===========
+
+✅ Calorie Counter
+  - Real-time total calculation
+  - Daily goal tracking (2000)
+
+✅ Antioxidant Tracker
+  - Score per meal
+  - Daily average
+  - Health status
+
+✅ Junk Food Detector
+  - Flags high-junk items
+  - Shows alerts
+  - Triggers suggestions
+
+✅ Fiber Monitor
+  - Tracks daily intake
+  - Visual progress bar
+  - Goal: 25g
+
+✅ Smart Alerts
+  - Auto-triggers for junk food
+  - 5-second display
+  - Non-intrusive
+
+✅ Meal History
+  - Time-stamped
+  - Detailed stats
+  - Clear option
+
+✅ Recommendations
+  - Dynamic based on intake
+  - Personalized tips
+  - Actionable advice
+
+
+CALCULATION FORMULAS
+====================
+
+Total Calories = SUM of all meal.calories
+
+Average Antioxidants = SUM of all meal.antioxidants / COUNT of meals
+
+Total Junk = SUM of all meal.junk
+
+Total Fiber = SUM of all meal.fiber
+
+Health Status = Based on Average Antioxidants
+  IF avgAntioxidants >= 70 → "Excellent"
+  IF avgAntioxidants >= 50 → "Good"
+  IF avgAntioxidants >= 30 → "Fair"
+  ELSE → "Needs improvement"
+
+
+NEXT FEATURES TO ADD
+====================
+
+Phase 2:
+  ▢ Camera food recognition
+  ▢ USDA nutrition API
+  ▢ Push notifications
+  ▢ Weekly email digest
+  ▢ Barcode scanning
+
+Phase 3:
+  ▢ AR portion sizing
+  ▢ User accounts
+  ▢ Social sharing
+  ▢ Dietitian integration
+  ▢ Meal planning
+
+Phase 4:
+  ▢ Offline support
+  ▢ Dark mode
+  ▢ Multiple languages
+  ▢ Premium features
+  ▢ Mobile app (native)
+
+
+---
+Ready to build? Start with QUICK_START.md! 🚀
